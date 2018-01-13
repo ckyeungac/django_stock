@@ -25,7 +25,7 @@ SECRET_KEY = 'zialw#*wth_2vl4l5nsy^m+rka0x-seeu87g0-8mtw7c9w9or2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['iamrayyeung.pythonanywhere.com']
 
 
 # Application definition
@@ -118,3 +118,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# default static files settings for PythonAnywhere.
+# see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
+MEDIA_ROOT = u'/home/iamrayyeung/django_stock/media'
+MEDIA_URL = '/media/'
+STATIC_ROOT = u'/home/iamrayyeung/django_stock/static'
+STATIC_URL = '/static/'
+
